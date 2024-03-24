@@ -1,0 +1,23 @@
+[include]
+  path = ./.themes.gitconfig
+[user]
+	name = Maxim Rudenko
+	email = maximu.rudenko@gmail.com
+[core]
+	editor = nvim
+[alias]
+	adog = log --all --decorate --oneline --graph
+  lg = log --all --decorate --graph --pretty=short --abbrev-commit
+  st = status
+[core]
+    pager = delta
+[interactive]
+    diffFilter = delta --color-only
+[delta]
+  navigate = true
+  features = chameleon
+[merge]
+    conflictstyle = diff3
+[diff]
+    colorMoved = default
+
