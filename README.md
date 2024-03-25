@@ -5,7 +5,7 @@
 - .bash_profile
 
 ##### path: 
-- /home/<user>/
+- /home/user/
 
 ## git
 ##### files: 
@@ -13,7 +13,7 @@
 - .themes.gitconfig
 
 ##### path: 
-- /home/<user>/
+- /home/user/
 
 ##### install delta ([repo](https://github.com/dandavison/delta))
  - Fedora
@@ -31,7 +31,7 @@ dpkg -i file.deb
 - .zshrc
 
 ##### path: 
-- /home/<user>/
+- /home/user/
 
 ##### install zsh
  - Fedora
@@ -60,7 +60,7 @@ Oh My Zsh is installed by running one of the following commands in your terminal
 - .tmux.remote.conf
 
 ##### path: 
-- /home/<user>/
+- /home/user/
 
 ##### install zsh
  - Fedora
@@ -88,7 +88,7 @@ Install plugins by pressing prefix + I(capital i, as Install) to fetch the plugi
 - FiraCode/
 
 ##### path: 
-- /home/<user>/.config/nvim/lua
+- /home/user/.config/nvim/lua
 
 ##### install neovim
 
