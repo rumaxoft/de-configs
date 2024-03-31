@@ -1,6 +1,23 @@
 ---@type MappingsTable
 local M = {}
 
+M.telescope = {
+  n = {
+    ["<leader>fr"] = { "<cmd>Telescope resume<CR>", "telescope resume last search" },
+  },
+}
+
+M.undotree = {
+  n = {
+    ["<leader>u"] = {
+      function()
+        require("undotree").toggle()
+      end,
+      "Toggle undo tree",
+    },
+  },
+}
+
 -- Primagen mappings
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
@@ -61,7 +78,6 @@ M.general = {
     ["<leader>ll"] = { "<cmd>TroubleToggle<CR>", "Open Trouble" },
     ["<leader>9"] = { "<cmd>vsplit<CR>", "Vertical split" },
     ["<leader>0"] = { "<cmd>split<CR>", "Horizontal split" },
-    ["<leader>u"] = { "<cmd>Telescope undo<CR>", "undo tree" },
     ["<leader>gl"] = {
       ":Flog<CR>",
       "Git Log",
