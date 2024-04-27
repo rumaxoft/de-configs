@@ -5,6 +5,16 @@ M.telescope = {
 	n = {
 		["<leader>fr"] = { "<cmd>Telescope resume<CR>", "telescope resume last search" },
   },
+  ["<leader>ft"] = {
+    function()
+      local node = require("nvim-tree.lib").get_node_at_cursor()
+      if not node then
+        return
+      end
+      require("telescope.builtin").live_grep({search_dirs = {node.absolute_path}})
+    end,
+    "Search in focused nvim tree folder",
+	},
 }
 
 M.undotree = {
