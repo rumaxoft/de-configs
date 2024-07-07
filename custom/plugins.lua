@@ -158,9 +158,9 @@ local plugins = {
     "echasnovski/mini.nvim",
     event = "BufReadPost",
     config = function()
-      require('mini.map').setup()
+      require("mini.map").setup()
     end,
-  }
+  },
 
   -- All NvChad plugins are lazy-loaded by default
   -- For a plugin to be loaded, you will need to set either `ft`, `cmd`, `keys`, `event`, or set `lazy = false`

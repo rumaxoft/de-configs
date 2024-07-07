@@ -1,10 +1,11 @@
 local on_attach = require("plugins.configs.lspconfig").on_attach
 local capabilities = require("plugins.configs.lspconfig").capabilities
 
-local lspconfig = require "lspconfig"
+
+local lspconfig = require('lspconfig')
 
 -- if you just want default config for the servers then put them in a table
-local servers = { "html", "cssls", "tsserver", "clangd", "volar" }
+local servers = { "html", "cssls", "tsserver", "clangd", "volar", "tailwindcss" }
 
 for _, lsp in ipairs(servers) do
   lspconfig[lsp].setup {
@@ -37,7 +38,6 @@ end
 local mason_registry = require('mason-registry')
 local vue_language_server_path = mason_registry.get_package('vue-language-server'):get_install_path() .. '/node_modules/@vue/language-server'
 
-local lspconfig = require('lspconfig')
 
 lspconfig.tsserver.setup {
   init_options = {

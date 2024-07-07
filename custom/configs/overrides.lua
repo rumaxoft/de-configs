@@ -1,5 +1,17 @@
 local M = {}
 
+local actions = require("telescope.actions")
+
+M.telescope = {
+  defaults = {
+    mappings = {
+      n = {
+        ["<C-t>"] = actions.send_selected_to_qflist + actions.open_qflist,
+      }
+    }
+  }
+}
+
 M.treesitter = {
   ensure_installed = {
     "vim",
